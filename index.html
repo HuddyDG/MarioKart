@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Mario Kart</title>
+            <script src="MarioKart.js"></script>
+
+            <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto&display=swap" rel="stylesheet">
+
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            <link rel="stylesheet" href="style.css"> 
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        </head>
+
+        <body>
+            <header class="container">
+                <div>
+                    <h1>Random Item Generator</h1>
+                    <h6 style="color: #cc0000;">This game of chance uses accurate percentages and calculations to predict what mystery item you would be rewarded on Mario Kart.</h6>    
+                </div>
+            </header>
+            <hr>
+            <div id="Info" class="container">
+                <div class="row">
+                    <div class="col-md" id='DataTable'>
+                        <table class="table">
+                            <thead class="bg-danger">
+                                <th>#</th>
+                                <th>Percentage</th>
+                                <th>Item(s)</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="1">1</th>
+                                    <td>25%</td>
+                                    <td>Banana</td>
+                                </tr>
+                                <tr>
+                                    <th scope="2">2</th>
+                                    <td>25%</td>
+                                    <td>Green Shell</td>
+                                </tr>
+                                <tr>
+                                    <th scope="3">3</th>
+                                    <td>15%</td>
+                                    <td>Star</td>
+                                </tr>
+                                <tr>
+                                    <th scope="4">4</th>
+                                    <td>15%</td>
+                                    <td>Golden Mushroom</td>
+                                </tr>
+                                <tr>
+                                    <th scope="5">5</th>
+                                    <td>10%</td>
+                                    <td>Bullet Bill</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-md" id="para">
+                        <h3 style="color: #cc0000;">Lorem</h3>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas velit est, cursus et justo at, efficitur venenatis magna. Proin quis ornare turpis, in varius eros. Aenean eu arcu vel massa elementum volutpat id at tortor. Integer placerat, ligula vitae dapibus blandit, lacus tellus fringilla massa, at imperdiet odio libero id tellus. Nam faucibus ac eros eu pulvinar. Curabitur varius nisi magna, nec cursus nisi accumsan et. Duis interdum aliquam felis sit amet laoreet. Maecenas vel erat ac tellus venenatis aliquet at eget lorem. Quisque ac enim et purus tincidunt sagittis aliquam tincidunt ante. Sed diam tortor, ultrices commodo lectus vitae, tempus egestas ex. Quisque diam libero, commodo pretium dapibus ut, vehicula at lectus. Nam ut ullamcorper nibh. Integer quis quam diam. Nullam luctus id urna vel gravida.</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div id="game">
+                <image src="Images/mysterybox.png"id="displayItem"></image>
+                <button class="btn btn-primary" onclick="Roll()">Roll</button>
+                <button onclick="Reset()" class="btn btn-primary text-center">Reset</button>
+
+            </div>
+            <div id="display" class="container">
+                <h4>Results</h4>
+                <div class="col-md" id='ResultTable'>
+                    <table class="table">
+                        <thead class="bg-danger">
+                            <th>#</th>
+                            <th>Amount</th>
+                            <th>Item</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="1">1</th>
+                                <td id="totalBanana">0</td>
+                                <td>Banana</td>
+                            </tr>
+                            <tr>
+                                <th scope="2">2</th>
+                                <td id="totalShell">0</td>
+                                <td>Green Shell</td>
+                            </tr>
+                            <tr>
+                                <th scope="3">3</th>
+                                <td id="totalStar">0</td>
+                                <td>Star</td>
+                            </tr>
+                            <tr>
+                                <th scope="4">4</th>
+                                <td id="totalMushroom">0</td>
+                                <td>Golden Mushroom</td>
+                            </tr>
+                            <tr>
+                                <th scope="5">5</th>
+                                <td id="totalBullet">0</td>
+                                <td>Bullet Bill</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </body>
+    </html>

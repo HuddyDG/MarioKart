@@ -1,0 +1,65 @@
+header{
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    margin: 5%;
+    padding: 3%;
+
+}
+
+tbody{
+    background-color: #ffe7e6;
+}
+thead{
+    color: white;
+}
+
+#displayItem{
+    max-width: 20%;
+    max-height: 20%;
+}
+
+#game{
+    padding: 5%;
+    margin-left: 25%;
+}
+
+#display{
+    text-align: center;
+    padding: 3%;
+}
+
+#game button{
+    margin: 3%;
+    margin-left:5%;
+    display: inline;
+    align-content: center;
+    justify-content: center
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.col-md {
+    margin: 4%;
+    margin-top:1%;
+}
+
+table{
+    margin-top:5%;
+}
+
+hr{
+    margin: 3%;
+}
+
+header h6{
+    font-family: 'Roboto', sans-serif;
+}
+
+#DataTable{
+    width: 50%;
+}
