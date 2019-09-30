@@ -54,7 +54,7 @@ function Roll(){
 
         }
         else{
-            if(percentage >= 0.65 && percentage > 0.70){
+            if(percentage >= 0.65 && percentage < 0.70){
                 item = items[3];
                 console.log(item);
                 document.getElementById("displayItem").src="Images/"+item+".png";
