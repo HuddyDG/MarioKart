@@ -91,13 +91,12 @@ function Roll(){
 
 function Reset(){
     document.getElementById("displayItem").src="Images/mysterybox.png";
-    var TotalAmounts = {
-        Banana:0,
-        GoldenMushroom: 0,
-        Star: 0,
-        Bullet: 0,
-        GreenShell: 0
-    }
+    TotalAmounts.Banana = 0;
+    TotalAmounts.Star = 0;
+    TotalAmounts.GoldenMushroom = 0;
+    TotalAmounts.GreenShell = 0;
+    TotalAmounts.Bullet = 0;
+    
     document.getElementById("totalBanana").innerHTML = TotalAmounts.Banana;
     document.getElementById("totalMushroom").innerHTML = TotalAmounts.GoldenMushroom;
     document.getElementById("totalStar").innerHTML = TotalAmounts.Star;
